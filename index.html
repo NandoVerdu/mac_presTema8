@@ -8,7 +8,9 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/beige.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="plugin/appearance/appearance.css"> 
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +18,46 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-auto-animate data-auto-animate-unmatched="fade">
+					<h2>Unidad 5</h2>
+					<h2>El Producto</h2>
+					<ul>
+						<li><a href="#/intro">5.0 Introducción</a></li>
+						<li><a href="#/concepto">6.1 Concepto de precio</a></li>
+						<li><a href="#/6.2">6.2 El producto como estrategia de marketing</a></li>
+						<li><a href="#/6.3">6.3 Clasificación de productos</a></li>
+						<li><a href="#/6.4">6.4 La dimensión del producto</a></li>
+						<li><a href="#/6.5">6.5 La marca</a></li>
+						<li><a href="#/6.6">6.6 El ciclo de vida del producto</a></li>
+						<li><a href="#/6.7">6.7 Estrategias en la política del producto</a></li>
+						<li><a href="#/6.8">6.8 Técnicas para analizar el producto</a></li>
+					</ul>
+				</section>
+
+				<section  id="intro" >
+					<h2>5.0 Introducción</h2>
+					<h3>MaRKETING MIX </h3>
+					<div class="r-stack">
+					<img src = "https://nandoverdu.github.io/MAC_presTema5/indicacio1v2.png" alt="My Happy SVG" width="auto" height="350px"/>
+					<img src = "https://nandoverdu.github.io/MAC_presTema5/indicacio1.png" alt="" width="auto" height="350px"class="fragment"/>
+					<img src = "https://nandoverdu.github.io/MAC_presTema5/indicacio2.png" alt="My Happy SVG" width="auto" top="20px" height="350px" class="fragment"/>
+					</div>
+				</section>
+
+				<section>
+					<ul>
+						<li class="data-autoappear">Add it to any text element</li>
+						<li class="data-autoappear">Like list items, or headers.</li>
+						<li class="data-autoappear">It adds some attention.</li>
+					</ul>
+				</section>
+				<section>
+					<ol>
+						<li class="data-autoappear">Add it to any text element</li>
+						<li class="data-autoappear">Like list items, or headers.</li>
+						<li class="data-autoappear">It adds some attention.</li>
+					</ol>
+				</section>
 			</div>
 		</div>
 
@@ -25,15 +65,30 @@
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script type="text/javascript" src="dist/reveal.js"></script>
+		<script src="plugin/appearance/appearance.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+				appearance: {
+		baseclass: 'animated',
+		visibleclass: 'in',
+		hideagain: true,
+		delay: 300,
+		appearevent: 'slidetransitionend',
+		autoappear: true,
+		autoelements: {
+				'ul li': 'fadeInLeft',
+				'ol li': 'fadeInRight',
+				'h2': 'lightSpeedInRight', 
+				'h3' : 'rotateInUpRight'
+}
+	},
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, Appearance ]
 			});
 		</script>
 	</body>
