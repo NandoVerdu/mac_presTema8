@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="90" height="20" version="1.1" viewBox="0 0 90 20" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <defs>
+  <filter id="filter4495" color-interpolation-filters="sRGB">
+   <feTurbulence baseFrequency="0.08" numOctaves="5" type="fractalNoise"/>
+   <feGaussianBlur result="result91" stdDeviation="0.5"/>
+   <feDisplacementMap in="SourceGraphic" in2="result91" result="result1" scale="20" xChannelSelector="R" yChannelSelector="G"/>
+   <feComposite in="result1" in2="SourceGraphic" operator="atop" result="fbSourceGraphic"/>
+   <feColorMatrix in="fbSourceGraphic" result="fbSourceGraphicAlpha" values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"/>
+   <feTurbulence baseFrequency="0.001 0.652" numOctaves="5" result="turbulence" seed="57" type="fractalNoise"/>
+   <feDisplacementMap in="fbSourceGraphic" in2="turbulence" result="fbSourceGraphic" scale="12.2" xChannelSelector="R" yChannelSelector="G"/>
+   <feColorMatrix in="fbSourceGraphic" result="fbSourceGraphicAlpha" values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"/>
+   <feTurbulence baseFrequency="0.001 0.652" numOctaves="5" result="turbulence" seed="57" type="fractalNoise"/>
+   <feDisplacementMap in="fbSourceGraphic" in2="turbulence" scale="12.2" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="translate(-11.899 -42.696)">
+  <rect transform="matrix(1.0124 0 0 .76853 -1.1112 10.521)" x="25.702" y="46.024" width="90" height="20" ry=".678" fill="#bc3cb1" fill-rule="evenodd" filter="url(#filter4495)"/>
+ </g>
+</svg>
